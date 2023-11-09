@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Acedmex/static/css/main.b9b6cd93.css",
+    "main.js": "/Acedmex/static/js/main.d427edd9.js",
+    "static/js/787.d3befce1.chunk.js": "/Acedmex/static/js/787.d3befce1.chunk.js",
+    "static/media/contact.jpg": "/Acedmex/static/media/contact.88ebd9ef35df7dd25d48.jpg",
+    "static/media/img5.jpg": "/Acedmex/static/media/img5.46251bda18f6850da249.jpg",
+    "static/media/img1.jpg": "/Acedmex/static/media/img1.c91539d4fb0469a1a1b1.jpg",
+    "static/media/img2.webp": "/Acedmex/static/media/img2.542a036f835bf256fce0.webp",
+    "static/media/img3.webp": "/Acedmex/static/media/img3.2afc0cea941391e54f5a.webp",
+    "static/media/img6.jpg": "/Acedmex/static/media/img6.67780c43cae61ac0827c.jpg",
+    "static/media/img4.jpg": "/Acedmex/static/media/img4.e05d39b3ebc8fd334f1e.jpg",
+    "static/media/img2.jpg": "/Acedmex/static/media/img2.07d3d847dfd2a5a9d893.jpg",
+    "static/media/img3.jpg": "/Acedmex/static/media/img3.a23f80d24fc1ae16d7df.jpg",
+    "static/media/img6.webp": "/Acedmex/static/media/img6.56078f5ff1e2aa5067ff.webp",
+    "static/media/img4.webp": "/Acedmex/static/media/img4.1c43f4fd791ea80eca06.webp",
+    "static/media/img5.webp": "/Acedmex/static/media/img5.e527f50f6ce60ebd1fb1.webp",
+    "static/media/img1.webp": "/Acedmex/static/media/img1.7e46679c28c9f3f88935.webp",
+    "index.html": "/Acedmex/index.html",
+    "main.b9b6cd93.css.map": "/Acedmex/static/css/main.b9b6cd93.css.map",
+    "main.d427edd9.js.map": "/Acedmex/static/js/main.d427edd9.js.map",
+    "787.d3befce1.chunk.js.map": "/Acedmex/static/js/787.d3befce1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9b6cd93.css",
+    "static/js/main.d427edd9.js"
+  ]
+}
