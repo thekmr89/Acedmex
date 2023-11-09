@@ -30,7 +30,7 @@ export const BlogDetail = () => {
                                         <ul>
                                             {filteredCat && filteredCat.blogs.map((blog, index) => (
                                                 <li key={index} className={blog.url === blogname ? 'active' : ''}>
-                                                    <Link to={`/blog/${filteredCat.url}/${blog.url}`}>{blog.title}</Link>
+                                                    <Link to={`/Acedmex/blog/${filteredCat.url}/${blog.url}`}>{blog.title}</Link>
                                                 </li>
                                             ))}
                                         </ul>
