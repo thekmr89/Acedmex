@@ -40,7 +40,7 @@ export const BlogDetail = () => {
                                         <ul>
                                             {BlogData && BlogData.map((blog, index) => (
                                                 <li key={index} className={blog.url === blogcategory ? 'active' : ''}>
-                                                    <Link to={`/blog/${blog.url}`} onClick={() => window.scrollTo(0, 0)}>{blog.category}({blog.blogs.length})</Link>
+                                                    <Link to={`/Acedmex/blog/${blog.url}`} onClick={() => window.scrollTo(0, 0)}>{blog.category}({blog.blogs.length})</Link>
                                                 </li>
                                             ))}
                                         </ul>
