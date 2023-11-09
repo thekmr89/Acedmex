@@ -48,6 +48,7 @@ export const Home = () => {
                                         arrows: false,
                                         snap: false,
                                         pauseOnHover: false,
+                                        rewind: false,
                                     }
                                 },
                             }}
