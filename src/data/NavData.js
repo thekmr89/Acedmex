@@ -1,18 +1,18 @@
 export const NavData = [
     {
         "name": "About Us",
-        "url": "/about",
+        "url": "/Acedmex/about",
     },
     {
         "name": "Pricing",
-        "url": "/pricing",
+        "url": "/Acedmex/pricing",
     },
     {
         "name": "Instructors",
-        "url": "/instructors",
+        "url": "/Acedmex/instructors",
     },
     {
         "name": "Blogs",
-        "url": "/blog",
+        "url": "/Acedmex/blog",
     },
 ];

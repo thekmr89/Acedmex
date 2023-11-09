@@ -31,14 +31,14 @@ function App() {
       <CartProvider>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/instructors" element={<Instructor />} />
-          <Route path="/blog" element={<Blogs />} />
-          <Route path="/blog/:blogcategory" element={<BlogCategory />} />
-          <Route path="/blog/:blogcategory/:blogname" element={<BlogDetail />} />
-          <Route path="/thank-you" element={<ThankYou />} />
+          <Route exact path="/Acedmex" element={<Home />} />
+          <Route path="/Acedmex/about" element={<About />} />
+          <Route path="/Acedmex/pricing" element={<Pricing />} />
+          <Route path="/Acedmex/instructors" element={<Instructor />} />
+          <Route path="/Acedmex/blog" element={<Blogs />} />
+          <Route path="/Acedmex/blog/:blogcategory" element={<BlogCategory />} />
+          <Route path="/Acedmex/blog/:blogcategory/:blogname" element={<BlogDetail />} />
+          <Route path="/Acedmex/thank-you" element={<ThankYou />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />

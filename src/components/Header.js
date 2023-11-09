@@ -11,7 +11,7 @@ export const Header = () => {
                 <div className="header-wrapper">
                     <div className="flex">
                         <div className="colA">
-                            <div className="logo"><Link to=""><img src={require('../assets/images/logo.png')} alt="Logo" /></Link></div>
+                            <div className="logo"><Link to="/Acedmex"><img src={require('../assets/images/logo.png')} alt="Logo" /></Link></div>
                         </div>
                         <div className="colB">
                             <nav>
