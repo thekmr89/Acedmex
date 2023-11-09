@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Acedmex/static/css/main.842705f1.css",
-    "main.js": "/Acedmex/static/js/main.d5e95438.js",
+    "main.js": "/Acedmex/static/js/main.6003bf90.js",
     "static/js/787.d3befce1.chunk.js": "/Acedmex/static/js/787.d3befce1.chunk.js",
     "static/media/contact.jpg": "/Acedmex/static/media/contact.88ebd9ef35df7dd25d48.jpg",
     "static/media/img5.jpg": "/Acedmex/static/media/img5.46251bda18f6850da249.jpg",
@@ -18,11 +18,11 @@
     "static/media/img1.webp": "/Acedmex/static/media/img1.7e46679c28c9f3f88935.webp",
     "index.html": "/Acedmex/index.html",
     "main.842705f1.css.map": "/Acedmex/static/css/main.842705f1.css.map",
-    "main.d5e95438.js.map": "/Acedmex/static/js/main.d5e95438.js.map",
+    "main.6003bf90.js.map": "/Acedmex/static/js/main.6003bf90.js.map",
     "787.d3befce1.chunk.js.map": "/Acedmex/static/js/787.d3befce1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.842705f1.css",
-    "static/js/main.d5e95438.js"
+    "static/js/main.6003bf90.js"
   ]
 }
