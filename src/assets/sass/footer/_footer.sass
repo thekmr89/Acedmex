@@ -1,0 +1,20 @@
+footer
+    background: #f1f0ee
+    .footer-wrapper
+        padding: 10px 0
+    .flex
+        align-items: center
+        justify-content: space-between
+        .colA
+            flex: 0 1 10%
+            max-width: 10%
+            width: 100%
+            @include respond-to(screen-767)
+                flex: 0 1 30%
+                max-width: 30%
+        .colB
+            p
+                font-size: 14px
+                font-family: $Poppins
+                @include respond-to(screen-767)
+                    font-size: 12px

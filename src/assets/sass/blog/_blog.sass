@@ -1,0 +1,106 @@
+.banner
+    &.blog-listing-banner
+        .bg
+            height: 300px
+        .banner-wrapper
+            left: 50%
+            translate: -50% -50%
+            .content
+                max-width: 100%
+                h1
+                    @include respond-to(screen-767)
+                        text-align: center
+    &.blog-detail-banner
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            z-index: 0
+            pointer-events: none
+            user-select: none
+            background: linear-gradient(45deg, #353535de, transparent)
+    &.blog-category-banner
+        .banner-wrapper
+            .content
+                max-width: 60%
+.blog-listing-secA
+    background: $LightBlack
+    padding: 0 0 45px
+    .bottom-nav-content
+        .grid
+            grid-template-columns: repeat(3,1fr)
+            grid-gap: 30px
+            @include respond-to(screen-767)
+                grid-template-columns: 100%
+                grid-gap: 20px 0
+            .col
+                img
+                    aspect-ratio: 1.5
+                    object-fit: cover
+                .col-wrap
+                    display: flex
+                    flex-direction: column
+                    height: 100%
+                figcaption
+                    height: 100%
+                    background: $LightGrey
+                    padding: 10px
+                    .title
+                        font-size: 18px
+                        line-height: 1.3
+                        padding-right: 2rem
+                        font-weight: 500
+.blog-detail-secA
+    background: $White
+    padding: 45px 0
+    .flex
+        .colA
+            flex: 1
+            .content
+                padding-right: 4rem
+                @include respond-to(screen-767)
+                    padding-right: 0
+                p
+                    margin-bottom: 15px
+                    text-align: justify
+                ul
+                    margin-bottom: 15px
+                    padding-left: 15px
+                    li
+                        list-style: disc
+                        &::marker
+                            color: $LightBlack
+        .colB
+            flex: 0 1 30%
+            @include respond-to(screen-767)
+                flex: 0 1 100%
+                max-width: 100%
+            .card
+                .card-md
+                    --vargap: 20px
+                    &.more-category
+                        ul
+                            li
+                                &.active
+                                    a
+                                        background: none
+                                        font-weight: 600
+                    h4
+                        font-size: 20px
+                        margin-bottom: var(--vargap)
+                        padding-bottom: 8px
+                        border-bottom: 1px solid $Black
+                    ul
+                        margin-bottom: var(--vargap)
+                        li
+                            a
+                                line-height: 1.2
+                                display: block
+                                padding: 8px 12px
+                                border-radius: 20px
+                            &.active
+                                a
+                                    background: $Gold

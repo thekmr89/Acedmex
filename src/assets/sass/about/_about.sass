@@ -1,0 +1,138 @@
+.banner
+    &.about-banner
+        .bg
+            height: calc(100vh - var(--headerheight) - var(--footerheight))
+        .banner-wrapper
+            display: flex
+            flex-wrap: wrap
+            left: 0
+            right: 0
+            width: 100%
+            padding: 0 10%
+            @include respond-to(screen-767)
+                padding: 0 15px
+            .content
+                flex: 0 1 50%
+                max-width: 50%
+                width: 100%
+                @include respond-to(screen-767)
+                    flex: 0 1 100%
+                    max-width: 100%
+        .secA-wrap
+            flex: 0 1 50%
+            max-width: 50%
+            width: 100%
+            @include respond-to(screen-767)
+                flex: 0 1 100%
+                max-width: 100%
+            .about-btn-demo
+                width: 100%
+                --btnsize: 25px
+                --linewidth: 118px
+                position: relative
+                @include respond-to(screen-767)
+                    --linewidth: 126px
+                .custom-btn-arrow
+                    caret-color: transparent
+                    button.prev,.next
+                        background: none
+                        border: none
+                        position: absolute
+                        top: 50%
+                        translate: 0 -50%
+                        caret-color: transparent
+                        img
+                            width: 40px
+                            @include respond-to(screen-767)
+                                width: 30px
+                    .prev
+                        left: -60px
+                        transform: scaleX(-1)
+                        @include respond-to(screen-767)
+                            left: -10px
+                    .next
+                        right: -60px
+                        @include respond-to(screen-767)
+                            right: -10px
+                .about-button-slider
+                    margin-bottom: 50px
+                    .splide__slide
+                        cursor: pointer
+                        &.on
+                            .item
+                                &::before
+                                    width: var(--linewidth)
+                        &.active,&.on
+                            .item
+                                background: $Gold
+                        &:first-child
+                            .item
+                                &::before,&::after
+                                    display: none
+                    .item
+                        height: var(--btnsize)
+                        width: var(--btnsize)
+                        border-radius: 50%
+                        background: $LightGrey
+                        margin: auto
+                        cursor: pointer
+                        position: relative
+                        caret-color: transparent
+                        pointer-events: none
+                        user-select: none
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        color: $Black
+                        font-weight: 500
+                        font-size: 14px
+                        line-height: 1
+                        &::before,&::after
+                            content: ''
+                            position: absolute
+                            top: 50%
+                            translate: 0 -50%
+                            height: calc( var(--btnsize) * .15 )
+                            caret-color: transparent
+                            pointer-events: none
+                            user-select: none
+                        &::after
+                            right: var(--btnsize)
+                            background: $LightGrey
+                            width: var(--linewidth)
+                        &::before
+                            left: calc(var(--linewidth) * -1)
+                            width: 0
+                            transition: .4s ease
+                            background: $Gold
+                            z-index: 1
+        .about-demo
+            width: 100%
+            .about-slider
+                .item
+                    --varpaddingitem: 25px
+                    --borderwidth: 5px
+                    padding: var(--varpaddingitem)
+                    height: 100%
+                    @include respond-to(screen-767)
+                        --varpaddingitem: 13px
+                        --borderwidth: 4px
+                    .card
+                        background: $LightGrey
+                        outline-offset: calc(var(--varpaddingitem) - var(--borderwidth))
+                        outline: var(--borderwidth) solid $LightGrey
+                        padding: 20px
+                        height: inherit
+                        .title
+                            margin-bottom: 15px
+                            display: flex
+                            align-items: center
+                            gap: 0 12px
+                        .content-p
+                            p
+                                color: $LightBlack
+                        h6
+                            font-size: 20px
+                            font-weight: 600
+                            display: inline-block
+                            vertical-align: middle

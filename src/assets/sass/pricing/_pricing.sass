@@ -1,0 +1,93 @@
+.pricing-secA
+    padding: 65px 0
+    @include respond-to(screen-767)
+        padding: 45px 0
+    .heading
+        margin-bottom: 50px
+        @include respond-to(screen-767)
+            margin-bottom: 30px
+    .courses-wrap
+        .grid
+            grid-template-columns: repeat(2,1fr)
+            grid-gap: 15px 20px
+            @include respond-to(screen-767)
+                grid-template-columns: 100%
+                grid-gap: 15px 0
+            .item
+                figure
+                    position: relative
+                    cursor: pointer
+                    &::before
+                        content: ""
+                        position: absolute
+                        top: 0
+                        left: 0
+                        right: 0
+                        bottom: 0
+                        pointer-events: none
+                        user-select: none
+                        background: $Black
+                        opacity: .4
+                    &:hover
+                        .video-btn
+                            transform: scale(1.1)
+                    img
+                        aspect-ratio: 1.8
+                        object-fit: cover
+                    .video-btn
+                        --btnsize: 55px
+                        height: var(--btnsize)
+                        width: var(--btnsize)
+                        border-radius: 50%
+                        border: 2px solid $LightGrey
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        margin: 0 auto
+                        position: absolute
+                        top: 50%
+                        left: 0
+                        right: 0
+                        translate: 0 -50%
+                        transition: .1s ease-out
+                        svg
+                            height: calc(var(--btnsize) * .5)
+                            width: calc(var(--btnsize) * .5)
+                            fill: $LightGrey
+                figcaption
+                    border: 1px solid $LightBlack
+                    --varspacefig: 12px
+                table
+                    width: 100%
+                    border-collapse: collapse
+                    tr,td,th
+                        padding: 5px
+                        text-align: center
+                        background: $LightGrey
+                        border: 1px solid $White
+                .desc
+                    padding: var( --varspacefig)
+                .explr-btn
+                    margin: var( --varspacefig)
+                    display: block
+                    width: -webkit-fill-available
+                    background: $LightBlack
+                    border: 1px solid $LightBlack
+                    color: $White
+                    font-family: inherit
+                    text-align: center
+                    cursor: pointer
+                    transition: .3s ease-out
+                    &:hover
+                        background: none
+                        color: $LightBlack
+.message-ad-cr
+    position: fixed
+    top: 80px
+    z-index: 12
+    left: 50%
+    translate: -50% 0
+    background: $LightBlack
+    color: $White
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px
+    padding: 8px 25px

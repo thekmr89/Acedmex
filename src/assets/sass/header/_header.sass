@@ -1,0 +1,178 @@
+header
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 9
+    transition: .5s ease
+    background: $LightGrey
+    .header-wrapper
+        padding: 18px 0
+        .flex
+            align-items: center
+            .colA
+                flex: 0 1 16%
+                max-width: 16%
+                width: 100%
+                @include respond-to(screen-767)
+                    flex: 0 1 35%
+                    max-width: 35%
+            .colB
+                flex: 1
+            nav
+                display: flex
+                align-items: center
+                justify-content: flex-end
+                gap: 0 35px
+                @include respond-to(screen-767)
+                    gap: 0 18px
+                ul
+                    @include respond-to(screen-767)
+                        display: none
+                    li
+                        display: inline-block
+                        &:not(:first-child)
+                            margin-left: 6px
+                        a
+                            color: $LightBlack
+                            padding: 8px 18px
+                            border-radius: 20px
+                            &:hover
+                                background: $Gold
+                            &.active
+                                background: $Gold
+                        &.has-dropdown
+                            position: relative
+                            &:hover
+                                .dropdown-menu
+                                    opacity: 1
+                                    transform: translateY(0%)
+                            a
+                                display: flex
+                                align-items: center
+                                gap: 0 12px
+                                img
+                                    width: 11px
+                            .dropdown-menu
+                                position: absolute
+                                width: 70rem
+                                top: 100%
+                                left: 50%
+                                translate: -50% 0
+                                background: $LightGrey
+                                padding: 30px
+                                padding-top: 25px
+                                transform: translateY(200%)
+                                opacity: 0
+                                border-radius: 0 0 20px 20px
+                                ul
+                                    display: grid
+                                    grid-template-columns: repeat(2,1fr)
+                                    background: #f5f5f5
+                                    padding: 40px
+                                    padding-top: 30px
+                                    border-radius: 30px 0px 0px 30px
+                                    max-height: 480px
+                                    box-shadow: rgb(149 157 165 / 15%) 0px 8px 24px
+                                    overflow-y: auto
+                                    &::-webkit-scrollbar
+                                        width: 3px
+                                        background: none
+                                    &::-webkit-scrollbar-track
+                                        box-shadow: none
+                                    &::-webkit-scrollbar-thumb
+                                        background-color: #cdcdcd
+                                    li
+                                        margin: 0
+                                        a
+                                            display: flex
+                                            gap: 0 18px
+                                            align-items: flex-start
+                                            padding: 20px
+                                            border-radius: 20px
+                                            svg
+                                                height: 30px
+                                                width: 30px
+                                                fill: $LightBlack
+                                            span
+                                                display: block
+                                                font-size: 18px
+                                                font-weight: 500
+                                            p
+                                                font-size: 14px
+                                                line-height: 20px
+                                                color: $text
+                                                padding-top: 4px
+                                                padding-right: 10px
+                                            &:hover
+                                                background: $Gold
+                .account-btn
+                    button
+                        display: inline-block
+                        background: $LightBlack
+                        color: $LightGrey
+                        padding: 6px 18px
+                        border-radius: 20px
+                        cursor: pointer
+                        border: 1px solid $LightBlack
+                        transition: .3s ease-out
+                        @include respond-to(screen-767)
+                            font-size: 12px
+                            padding: 2px 12px
+                        &:hover
+                            background: none
+                            color: $LightBlack
+                .add-to-cart
+                    button
+                        appearance: none
+                        display: inline-block
+                        border: none
+                        background: none
+                        position: relative
+                        cursor: pointer
+                        span
+                            --varheig: 20px
+                            font-size: 12px
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            position: absolute
+                            right: -8px
+                            top: -7px
+                            color: $Black
+                            height: var(--varheig)
+                            width: var(--varheig)
+                            border-radius: 50%
+                            background: $Gold
+                            opacity: 0
+                            &.active
+                                opacity: 1
+                    svg
+                        --vardimen: 32px
+                        height: var(--vardimen)
+                        width: var(--vardimen)
+                        vertical-align: middle
+                        @include respond-to(screen-767)
+                            --vardimen: 25px
+                .ham-btn
+                    width: 40px
+                    display: flex
+                    flex-direction: column
+                    gap: 6px
+                    cursor: pointer
+                    @include respond-to(screen-767)
+                        width: 30px
+                        gap: 4px
+                    span
+                        width: 100%
+                        background: $LightBlack
+                        height: 2px
+                        display: block
+                        &:nth-child(2)
+                            width: 80%
+                            margin-left: auto
+                            margin-right: 0
+                        &:last-child
+                            width: 50%
+                            margin-left: auto
+                            margin-right: 0

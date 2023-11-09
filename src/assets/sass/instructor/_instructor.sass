@@ -1,0 +1,128 @@
+.banner
+    &.instructor-banner
+        .bg
+            height: calc(100vh - var(--headerheight))
+            @include respond-to(screen-767)
+                height: 400px
+.go-to-tab
+    position: fixed
+    z-index: 9
+    top: calc(50% + var(--headerheight))
+    right: 6%
+    translate: 0 -50%
+    @include respond-to(screen-767)
+        display: none
+    ul
+        --dotsize: 16px
+        --lineheight: 80px
+        --trianlesize: 5px
+        display: flex
+        flex-direction: column
+        gap: var(--lineheight) 0
+        li
+            position: relative
+            cursor: pointer
+            &:first-child
+                &::before,&::after
+                    display: none
+            &::before,&::after
+                content: ''
+                position: absolute
+                width: calc(var(--dotsize) * .15)
+                bottom: 100%
+                left: 50%
+                translate: -50% 0
+                transition: .5s ease
+            &::before
+                height: var(--lineheight)
+                background: $LightGrey
+            &::after
+                height: 0
+                background: $Gold
+            &.on
+                &::after
+                    height: var(--lineheight)
+            &.active,&:hover
+                .dot
+                    background: $Gold
+                .tooltip-title
+                    transform: translateX(0px) scale(1)
+                    opacity: 1
+                    pointer-events: all
+                    user-select: auto
+            .dot
+                height: var(--dotsize)
+                width: var(--dotsize)
+                border-radius: 50%
+                background: $LightGrey
+            .tooltip-title
+                position: absolute
+                top: 50%
+                translate: 0 -50%
+                right: 100%
+                white-space: nowrap
+                background: $LightGrey
+                font-size: 14px
+                line-height: 1
+                padding: 2px 8px
+                margin-right: 10px
+                transition: .3s ease
+                transform: translateX(50px) scale(.8)
+                opacity: 0
+                pointer-events: none
+                user-select: none
+                cursor: default
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 50%
+                    left: 100%
+                    translate: 0 -50%
+                    width: 0
+                    height: 0
+                    border-top: var(--trianlesize) solid transparent
+                    border-bottom: var(--trianlesize) solid transparent
+                    border-left: var(--trianlesize) solid $LightGrey
+.go-to-section
+    section
+        &:not(.banner-section)
+            background: $LightBlack
+            height: calc(100vh - var(--headerheight))
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            color: $White
+            border-top: 1px solid $White
+            @include respond-to(screen-767)
+                height: auto
+                padding: 30px 0
+            .flex
+                @include respond-to(screen-767)
+                    gap: 20px 0
+                .colA
+                    flex: 0 1 25%
+                    max-width: 25%
+                    width: 100%
+                    @include respond-to(screen-767)
+                        flex: 0 1 100%
+                        max-width: 100%
+                    img
+                        aspect-ratio: 1
+                        object-fit: cover
+                .colB
+                    flex: 1
+                    text-align: left
+                    @include respond-to(screen-767)
+                        flex: 0 1 100%
+                        max-width: 100%
+                    .instru-wrap
+                        padding-left: 4rem
+                        @include respond-to(screen-767)
+                            padding-left: 0
+                        .content-nstru
+                            p
+                                &:not(:last-child)
+                                    margin-bottom: 15px
+                    .inst-Subj
+                        margin: 12px 0

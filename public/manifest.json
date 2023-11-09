@@ -1,0 +1,14 @@
+{
+    "name": "Acedemex",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#007bff",
+    "icons": [
+        {
+            "src": "/favicon.png",
+            "sizes": "51x49",
+            "type": "image/png"
+        }
+    ]
+}

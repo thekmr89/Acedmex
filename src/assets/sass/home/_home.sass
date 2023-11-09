@@ -1,0 +1,143 @@
+.banner
+    position: relative
+    &.home-banner
+        .banner-wrapper
+            .content
+                a
+                    color: $LightGrey
+                    &:hover
+                        color: $LightBlack
+    &.contact-banner
+        .banner-wrapper
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: space-between
+            left: 0
+            right: 0
+            padding: 0 100px
+            .content
+                max-width: initial
+                flex: 0 1 auto
+                p
+                    max-width: 580px
+            .contact-form
+                flex: 1
+                form
+                    display: flex
+                    flex-wrap: wrap
+                    .form-group
+                        flex: 0 1 50%
+                        max-width: 50%
+                        width: 100%
+                        position: relative
+                        --varspacing: 10px
+                        padding: var(--varspacing)
+                        padding-left: 0
+                        &.flex100
+                            flex: 0 1 100%
+                            max-width: 100%
+                        label
+                            position: absolute
+                            top: 50%
+                            left: var(--varspacing)
+                            translate: 0 -50%
+                            color: $White
+                            font-size: 14px
+                            font-weight: 300
+                            transition: .5s ease
+                            pointer-events: none
+                            user-select: none
+                            &.valid
+                                top: 0
+                                background: $LightBlack
+                        input,textarea
+                            resize: none
+                            width: 100%
+                            border: 1px solid $White
+                            background: none
+                            font-family: inherit
+                            color: $White
+                            font-size: 14px
+                            appearance: none
+                            -moz-appearance: textfield
+                            padding: calc( var(--varspacing) - 5px )
+                            &:focus
+                                outline: none
+                            &::-webkit-outer-spin-button,
+                            &::-webkit-inner-spin-button
+                                -webkit-appearance: none
+                                margin: 0
+                            &::placeholder
+                                font-family: inherit
+                                color: $White
+                                font-size: 14px
+                                padding-left: 4px
+.home-secA
+    background: $LightBlack
+    padding: 0 0 70px
+    @include respond-to(screen-767)
+        padding: 40px 0
+    .heading
+        margin-bottom: 50px
+        @include respond-to(screen-767)
+            margin-bottom: 40px
+        h3
+            color: $LightGrey
+            font-weight: 500
+    .course-demo
+        .courses-slider
+            .item
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
+            figure
+                overflow: hidden
+            img
+                aspect-ratio: 1.8
+                object-fit: cover
+            figcaption
+                background: $LightGrey
+                --varspace: 25px
+                padding: var(--varspace)
+                position: relative
+                @include respond-to(screen-767)
+                    --varspace: 20px
+                .sub-name
+                    font-size: 22px
+                    font-weight: 500
+                    padding-bottom: 15px
+                .desc
+                    font-size: 15px
+                    line-height: 1.5
+                .price-duration
+                    position: absolute
+                    right: 0
+                    top: 0
+                    padding: var(--varspace)
+                    padding-bottom: 0
+                    padding-left: 0
+                    font-size: 14px
+                    p
+                        display: inline-block
+                .explr-btn
+                    margin-top: 20px
+                    display: block
+                    text-align: center
+                    color: $LightGrey
+                    border-color: $LightBlack
+                    background: $LightBlack
+                    transition: .3s ease-out
+                    cursor: pointer
+                    &:hover
+                        background: none
+                        color: $LightBlack
+            .splide__arrows
+                --varpost: -3rem
+                button.splide__arrow
+                    background: $LightGrey
+                    opacity: 1
+                    svg
+                        fill: $LightBlack
+                .splide__arrow--prev
+                    left: var(--varpost)
+                .splide__arrow--next
+                    right: var(--varpost)
