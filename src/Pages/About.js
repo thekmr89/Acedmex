@@ -51,16 +51,13 @@ export const About = () => {
                                 rewind: true,
                                 gap: "70px",
                                 pauseOnHover: true,
-                                perMove: 1,
                                 autoplay: false,
                                 pagination: false,
                                 arrows: false,
+                                perPage: 5,
                                 focus: 'center',
                                 breakpoints: {
-                                    675: {
-                                        perPage: 5,
-                                    },
-                                    420: {
+                                    767: {
                                         perPage: 3,
                                     },
                                 },

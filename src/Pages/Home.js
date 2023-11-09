@@ -36,22 +36,19 @@ export const Home = () => {
                                 type: "loop",
                                 rewind: true,
                                 gap: "20px",
-                                drag: 'free',
                                 snap: true,
                                 pauseOnHover: true,
                                 perPage: 3,
                                 autoplay: false,
                                 pagination: false,
+                                arrows: true,
                                 breakpoints: {
                                     767: {
-                                        perPage: 3,
-                                        arrows: true,
-                                    },
-                                    420: {
-                                        gap: "20px",
                                         perPage: 1.2,
                                         arrows: false,
-                                    },
+                                        snap: false,
+                                        pauseOnHover: false,
+                                    }
                                 },
                             }}
                             aria-label="Courses Slider"
