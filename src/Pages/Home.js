@@ -27,8 +27,6 @@ export const Home = () => {
                     <div className="heading text-center">
                         <h3>Our Courses</h3>
                     </div>
-                </div>
-                <div className="container container2">
                     <div className="course-demo">
                         <Splide
                             className="courses-slider"
@@ -44,11 +42,8 @@ export const Home = () => {
                                 arrows: true,
                                 breakpoints: {
                                     767: {
-                                        perPage: 1.2,
-                                        arrows: false,
-                                        snap: false,
+                                        perPage: 1,
                                         pauseOnHover: false,
-                                        rewind: false,
                                     }
                                 },
                             }}
