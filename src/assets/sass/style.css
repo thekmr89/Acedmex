@@ -911,9 +911,19 @@ header .header-wrapper .flex nav .ham-btn span:last-child {
 .home-secA .course-demo .courses-slider .splide__arrows {
   --varpost: -3rem;
 }
+@media (max-width: 767px) {
+  .home-secA .course-demo .courses-slider .splide__arrows {
+    --varpost: 1rem;
+  }
+}
 .home-secA .course-demo .courses-slider .splide__arrows button.splide__arrow {
   background: #f1f0ee;
   opacity: 1;
+}
+@media (max-width: 767px) {
+  .home-secA .course-demo .courses-slider .splide__arrows button.splide__arrow {
+    top: 40%;
+  }
 }
 .home-secA .course-demo .courses-slider .splide__arrows button.splide__arrow svg {
   fill: #2f3031;

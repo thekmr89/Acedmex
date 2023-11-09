@@ -132,9 +132,13 @@
                         color: $LightBlack
             .splide__arrows
                 --varpost: -3rem
+                @include respond-to(screen-767)
+                    --varpost: 1rem
                 button.splide__arrow
                     background: $LightGrey
                     opacity: 1
+                    @include respond-to(screen-767)
+                        top: 40%
                     svg
                         fill: $LightBlack
                 .splide__arrow--prev

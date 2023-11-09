@@ -44,6 +44,7 @@ export const Home = () => {
                                     767: {
                                         perPage: 1,
                                         pauseOnHover: false,
+                                        arrows: true,
                                     }
                                 },
                             }}
