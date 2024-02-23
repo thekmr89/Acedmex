@@ -1464,13 +1464,6 @@ footer .flex .colB p {
     --icosize: 15px;
   }
 }
-.Inquirypop .model-body .flex .colB .form-wrap .form-group .msgfrm .icon {
-  height: var(--icosize);
-  width: var(--icosize);
-  position: absolute;
-  top: calc(var(--spacebtm) * -1);
-  right: var(--spleft);
-}
 .Inquirypop .model-body .flex .colB .form-wrap .form-group .msgfrm.error svg {
   fill: red;
 }
