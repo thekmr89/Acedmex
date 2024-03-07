@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react'
+import React, { createContext, useContext,useEffect, useState } from 'react'
 
 const Modelscontext = createContext();
 
@@ -11,6 +11,14 @@ export const CartProvider = ({ children }) => {
     const [Videomodel, SetVideomodel] = useState(false);
     const [VideoSrc, SetVideoSrc] = useState([]);
     const [resetForm, setresetForm] = useState(null);
+
+    useEffect(() => {
+        const storedCartItems = JSON.parse(sessionStorage.getItem('cartItems'));
+        if (storedCartItems) {
+            setCartItems(storedCartItems);
+        }
+    }, []);
+    
 
     const show_overlay = () => {
         SetOverlay(true);
@@ -59,13 +67,17 @@ export const CartProvider = ({ children }) => {
     }
 
     const addToCart = (item) => {
-        setCartItems([...cartItems, item]);
+        const updatedCart = [...cartItems, item];
+        setCartItems(updatedCart);
+        sessionStorage.setItem('cartItems', JSON.stringify(updatedCart));
     };
-
+    
     const removeFromCart = (itemId) => {
         const updatedCart = cartItems.filter((item) => item.id !== itemId);
         setCartItems(updatedCart);
+        sessionStorage.setItem('cartItems', JSON.stringify(updatedCart));
     };
+    
 
     return (
         <Modelscontext.Provider value={{ cartItems, Hammodel, overlay, cartmodel, Inquirymodel, Videomodel, VideoSrc, resetForm, addToCart, removeFromCart, show_hammodel, hide_hammodel, show_overlay, hide_overlay, show_cartmodel, hide_cartmodel, show_inquirymodel, hide_inquirymodel, show_videomodel, hide_videomodel, setresetForm }}>
